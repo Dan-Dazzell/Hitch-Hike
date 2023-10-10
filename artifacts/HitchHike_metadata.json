@@ -1,0 +1,52 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "pay",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"HitchHike.sol": "HitchHike"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"HitchHike.sol": {
+			"keccak256": "0xf5ffad484495f2f8d1e0d6aaec49fe8690a0e426129ca8342990f1b26a003091",
+			"urls": [
+				"bzz-raw://9b8203650b2b1b23532dda607987815d46e5135405fd95afa4f18f1a28e4baa0",
+				"dweb:/ipfs/Qme1782Vft4eTe2tGrYxPrFPuEFkzcPzcUC6EdXWmXAJbr"
+			]
+		}
+	},
+	"version": 1
+}
