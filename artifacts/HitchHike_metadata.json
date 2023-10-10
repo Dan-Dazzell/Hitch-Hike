@@ -4,15 +4,7 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [
-			{
-				"inputs": [],
-				"name": "pay",
-				"outputs": [],
-				"stateMutability": "payable",
-				"type": "function"
-			}
-		],
+		"abi": [],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -41,10 +33,11 @@
 	},
 	"sources": {
 		"HitchHike.sol": {
-			"keccak256": "0xf5ffad484495f2f8d1e0d6aaec49fe8690a0e426129ca8342990f1b26a003091",
+			"keccak256": "0x41bbf82a6253003ce26c18c69ca9bfc42d43e6fd347fff0d3138585fc437ecd5",
+			"license": "MIT",
 			"urls": [
-				"bzz-raw://9b8203650b2b1b23532dda607987815d46e5135405fd95afa4f18f1a28e4baa0",
-				"dweb:/ipfs/Qme1782Vft4eTe2tGrYxPrFPuEFkzcPzcUC6EdXWmXAJbr"
+				"bzz-raw://2615b3deaa9c49c65d707a89b6334c5739091a30b032db2fc23bdf25a35aa6be",
+				"dweb:/ipfs/Qmc48MD6PLvs6LiZ8r1SNJ7AfPfnZBjEQhGcYxPyjddAMs"
 			]
 		}
 	},
