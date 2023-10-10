@@ -33,11 +33,11 @@
 	},
 	"sources": {
 		"HitchHike.sol": {
-			"keccak256": "0x41bbf82a6253003ce26c18c69ca9bfc42d43e6fd347fff0d3138585fc437ecd5",
+			"keccak256": "0xa5fca7c16d740e140362eef7c810ce74bf95733626bdc1e60cc4becffd550e45",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://2615b3deaa9c49c65d707a89b6334c5739091a30b032db2fc23bdf25a35aa6be",
-				"dweb:/ipfs/Qmc48MD6PLvs6LiZ8r1SNJ7AfPfnZBjEQhGcYxPyjddAMs"
+				"bzz-raw://408587d608b07c15069507b66958a498fffda0fa414792b184a403f3b6cb160c",
+				"dweb:/ipfs/QmY6kdXybsnAjJBx7B1LPcnReDDzCoS8WXzGZ4QptsbVDU"
 			]
 		}
 	},
