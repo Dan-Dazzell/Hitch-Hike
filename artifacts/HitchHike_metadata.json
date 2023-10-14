@@ -4,7 +4,361 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [],
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "hitchhiker",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "driver",
+						"type": "address"
+					}
+				],
+				"name": "RideAccepted",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "hitchhiker",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "driver",
+						"type": "address"
+					}
+				],
+				"name": "RideCancelled",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "hitchhiker",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "driver",
+						"type": "address"
+					}
+				],
+				"name": "RideCompleted",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "hitchhiker",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "currentLocation",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "destination",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "cost",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "estimatedTime",
+						"type": "uint256"
+					}
+				],
+				"name": "RideRequested",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "walletAddress",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "enum Hitchhike.UserType",
+						"name": "userType",
+						"type": "uint8"
+					}
+				],
+				"name": "UserLoggedIn",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "walletAddress",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "enum Hitchhike.UserType",
+						"name": "userType",
+						"type": "uint8"
+					}
+				],
+				"name": "UserRegistered",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "loginUser",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "enum Hitchhike.UserType",
+						"name": "_userType",
+						"type": "uint8"
+					}
+				],
+				"name": "registerUser",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_currentLocation",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_destination",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_cost",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_estimatedTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "_isAccepted",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "_isCompleted",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "_passengerConfirmed",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "_driverConfirmed",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "_isCancelled",
+						"type": "bool"
+					}
+				],
+				"name": "requestRide",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "rideDetails",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "driver",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "vehicleType",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "currentLocation",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "cost",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "estimatedTime",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "rideRequests",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "hitchhiker",
+						"type": "address"
+					},
+					{
+						"internalType": "address payable",
+						"name": "driver",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "currentLocation",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "destination",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "cost",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "estimatedTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "isAccepted",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "isCompleted",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "passengerConfirmed",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "driverConfirmed",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "isCancelled",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "users",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "walletAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "enum Hitchhike.UserType",
+						"name": "userType",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -18,7 +372,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"HitchHike.sol": "HitchHike"
+			"HitchHike.sol": "Hitchhike"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -33,11 +387,11 @@
 	},
 	"sources": {
 		"HitchHike.sol": {
-			"keccak256": "0xa5fca7c16d740e140362eef7c810ce74bf95733626bdc1e60cc4becffd550e45",
+			"keccak256": "0xe377ee1e4c483317c2819ada2590c02fdb238677fac86531c32b646217db022c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://408587d608b07c15069507b66958a498fffda0fa414792b184a403f3b6cb160c",
-				"dweb:/ipfs/QmY6kdXybsnAjJBx7B1LPcnReDDzCoS8WXzGZ4QptsbVDU"
+				"bzz-raw://cdfed9a6581ac527b166a56513b99f6d4656c14c2010e10be83a9fcb49ac5893",
+				"dweb:/ipfs/QmfJDAqY9M8ijMTh963fPn9R6C3nc2eRHpfaZYhT4Ee3o8"
 			]
 		}
 	},
